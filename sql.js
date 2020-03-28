@@ -6,7 +6,12 @@ Returns a SQL query string that will create the Country table with four columns:
 */
 
 const createCountryTable = () => {
-  return;
+  return `CREATE TABLE Country (
+    name TEXT NOT NULL,
+    code TEXT NOT NULL,
+    gdp INTEGER,
+    population INTEGER
+  );`;
 };
 
 /*
