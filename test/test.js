@@ -93,7 +93,7 @@ describe('createCountryTable', function() {
   });
 });
 
-/*
+
 describe('createGoldMedalTable', function() {
   afterEach(function(done) {
     emptyDb.run('DROP TABLE IF EXISTS GoldMedal', done);
@@ -336,7 +336,7 @@ describe('bestYear', function() {
     expect(typeof sql.bestYear).to.equal('function');
   });
 
-  it('should return a SQL query string that retrieves the year a country won the most gedals', function(done) {
+  it('should return a SQL query string that retrieves the year a country won the most gold medals', function(done) {
     const query = sql.bestYear('Paraguay');
     seededDb.get(query, (error, result) => {
       let year = result && result.year;
@@ -534,8 +534,7 @@ describe('mostMedaledAthlete', function() {
     });
   });
 });
-*/
-/*
+
 describe('orderedMedals', function() {
   it('a function called orderedMedals exists', function() {
     expect(sql.orderedMedals).to.exist;
@@ -657,4 +656,3 @@ describe('orderedSports', function() {
     });
   });
 });
-*/
